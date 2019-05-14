@@ -54,7 +54,7 @@ GitHub Lidemy 個人作業頁面會出現上一步 push 的 branch，按下 *com
 
 ### 交作業後續
 
-把 GitHub 上的檔案內容和電腦裡同步，再電腦上
+把 GitHub 上的檔案內容和電腦裡同步，在電腦上
 
 - `git checkout master` 切回 master
 - `git pull origin master ` 把 GitHub 上 Merge 過的 master 拉回電腦
