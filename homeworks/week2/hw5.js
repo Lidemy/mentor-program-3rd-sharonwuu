@@ -1,10 +1,19 @@
 function join(str, concatStr) {
-  return concatStr;
+  let result = '';
+  for (let i = 0; i < str.length; i += 1) {
+    if (i === 0) result += concatStr;
+    result += str[i];
+  }
+  return result;
 }
 
 function repeat(str, times) {
-  return times;
+  let result = '';
+  for (let i = 1; i <= times; i += 1) {
+    result += str;
+  }
+  return result;
 }
 
-console.log(join('a', '!'));
-console.log(repeat('a', 5));
+console.log(join('abc', '!'));
+console.log(repeat('yoyo', 2));
