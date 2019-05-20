@@ -1,5 +1,5 @@
 function isPalindromes(str) {
-  console.log(str);
+  return str.toUpperCase() === str.toUpperCase().split('').reverse().join('');
 }
 
 module.exports = isPalindromes;
