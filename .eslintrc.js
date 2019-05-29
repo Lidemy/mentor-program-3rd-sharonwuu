@@ -10,6 +10,7 @@ module.exports = {
     Atomics: 'readonly',
     SharedArrayBuffer: 'readonly',
   },
+  parser: "babel-eslint",
   parserOptions: {
     ecmaFeatures: {
       jsx: true,
@@ -20,6 +21,10 @@ module.exports = {
     'react',
   ],
   rules: {
-    "no-console": "off"
+    "no-console": "off",
+    "import/no-extraneous-dependencies": [
+      "error", {"devDependencies": true}
+    ]
   },
+
 };
