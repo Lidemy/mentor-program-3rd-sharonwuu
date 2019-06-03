@@ -6,10 +6,10 @@ let action = '';
 if (process.argv[2] === 'list' && !process.argv[3]) {
   action = 'list';
 } else if (process.argv[2] === 'read') {
-  if (process.argv[3] < 21 && process.argv[3] > 0) {
+  if (Number(process.argv[3])) {
     action = `read ${process.argv[3]}`;
   } else {
-    console.log('要輸入 1-20 的書籍編號啊');
+    console.log('要輸入書籍編號喔');
   }
 } else {
   console.log('輸入錯誤，試試輸入 "list" 或 "read" 編號');
