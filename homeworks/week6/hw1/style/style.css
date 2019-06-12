@@ -1,0 +1,173 @@
+html, body {
+  height:100%;
+  width: 100%;
+  font-family: 'Lora', serif;
+  cursor: pointer;
+}
+
+/*----- nav -----*/
+nav {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  height: 70px;
+  padding: 25px 20px;
+  box-sizing: border-box; 
+  background-color: black;
+  color: white;
+}
+nav * {
+  display: inline; 
+}
+nav span {
+  font-size: 23px;
+  margin-right: 20px;
+}
+nav ul li {
+  font-size: 15px;
+  margin-right: 10px;
+  color: grey;  
+}
+nav ul li:hover {
+  font-size: 16px;
+  color: #fff;
+  transition: all 0.5s;
+}
+
+/*---- container -----*/
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height:100%;
+  width: 100%;
+  margin-top: 70px;
+}
+
+/* header */
+header {
+  color: white;
+  background-image: url('./TheBookThief.jpg'); 
+  background-repeat: no-repeat;
+  background-position: center; 
+  background-size: cover;
+}
+header > div {
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 70px 50px;
+}
+header .title {
+  display: flex;
+  flex-direction: row;
+}
+
+.title_curlyBraces {
+  font-size: 120px;
+  margin: 0px 8px;
+}
+.title_info, .title_info_name {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.title_info_name div:first-child{
+  font-size: 25px;
+}
+.title_info_name div:last-child{
+  font-size: 90px;
+}
+.title_info_about {
+  font-size: 11px;
+  font-style: italic;
+}
+.title_info_author {
+  font-size: 20px; 
+  margin-top: 20px; 
+}
+
+header .intro {
+  font-size: 13px;
+  line-height: 20px;
+  align-self: flex-end;
+  width: 500px;
+}
+header .intro p {
+  margin-bottom: 8px;
+}
+header .button {
+  background-color: #ffffff2e;  
+  display: inline-block;
+  padding: 5px 15px;
+  border: 1px solid #fff;
+  border-radius: 2px;
+  font-size: 11px;
+}
+header .button:hover{
+  background-color: #fff; 
+  color: #16090a;
+  transition: all 0.5s;
+}
+
+/* section */
+section {
+  display: flex;
+  justify-content: center;
+  padding: 50px 20px; 
+}
+section article {
+  margin: 0px 20px;
+  max-width: 280px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+article .title {
+  font-size: 20px;
+  margin-bottom: 15px; 
+}
+article p {
+  font-size: 15px;
+  line-height: 25px;
+  margin-bottom: 15px; 
+}
+article .button {
+  font-size: 12px;  
+  border-radius: 2px; 
+  border: 1px solid #93837c;   
+  color: white;  
+  background-color: #93837c;
+  padding: 13px 18px;
+  align-self: flex-start;
+}
+article .button:hover {
+  background-color: white;
+  color: #93837c;
+  transition: all 0.5s;
+}
+
+/* footer */
+footer {
+  margin: 10px 40px;
+  padding: 20px 0px;
+  color: #8c8c8c;
+  font-size: 13px;
+  border-top: 1px #8c8c8c solid;
+}
+
+@media screen and (max-width: 650px){
+  header .intro {
+    width: 100%;
+  }
+  section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  article .button {
+    margin-bottom: 30px;
+  }
+}
