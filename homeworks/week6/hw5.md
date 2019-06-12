@@ -1,5 +1,22 @@
 ## 請找出三個課程裡面沒提到的 HTML 標籤並一一說明作用。
 
+- `<select>` 建立下拉式選單，再用 `<option>` 建立選單中的選項。
+  ```
+  <select>
+    <option value="item1">item1</option>
+    <option value="item2">item2</option>
+    <option value="itme3">itme3</option>
+  </select>
+  ```
+
+- `<canvas>` 建立圖形元素，透過程式（JavaScript）繪製圖形，也可以合成或製作動畫。
+- `<progress>` 建立進度條。`value` 設定目前進度；`max` 設定全部需要完成的值。
+  ```
+  <progress value="22" max="100">
+  </progress>
+  ```
+
+
 ## 請問什麼是盒模型（box modal）
 
 每個元素都是一個盒子，透過 margin、border、padding、content 調整盒子的大小。
@@ -28,21 +45,15 @@
 `position` 用來指定元素的定位方式；`top`、`bottom`、`right`、`left` 則用來決定最後的實際位置。
 
 - `static` ：預設值。
-
   依照瀏覽器預設位置自動排版，不會特別定位，所以設定 `top`、`bottom`、`right`、`left` 也沒有效果。
 
 - `relative`：相對定位。
-
   在沒設定 `top`、`bottom`、`right`、`left` 屬性時，和 `static` 一樣，不會有特別的定位。
-
   若有設定其他屬性，會以「原本的預設位置」為參考點，依照所設的值移動元素，且不會影響其他元素原本的位置。- 
 
 - `absolute`：絕對定位。
-
   可以用 `top`、`bottom`、`right`、`left` 屬性設定位置，會以「最近的非 static 父元素」為參考點偏移。如果沒有參考點，就會以 body 為參考點。
 
 - `fixed`：固定定位。
-
   用 `top`、`bottom`、`right`、`left` 屬性設定位置，會以「瀏覽器視窗」為參考點，將元素固定於視窗上，不會跟著捲動頁面移動。
-
   不會保留原有的空間，所以不影響其他元素的位置。
